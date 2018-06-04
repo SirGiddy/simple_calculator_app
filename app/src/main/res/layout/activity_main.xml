@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appcolor"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvResult"
+        style="@style/textview_style"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:contentDescription="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvControl"
+        style="@style/textview_style"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:contentDescription="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvResult" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvControl">
+
+        <Button
+            android:id="@+id/btn9"
+            style="@style/button_style"
+            android:contentDescription="@null"
+            android:text="@string/nine" />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"></Space>
+
+        <Button
+            android:id="@+id/btn8"
+            style="@style/button_style"
+            android:contentDescription="@null"
+            android:text="@string/eight" />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"></Space>
+
+        <Button
+            android:id="@+id/btn7"
+            style="@style/button_style"
+            android:contentDescription="@null"
+            android:text="@string/seven" />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"></Space>
+
+        <Button
+            android:id="@+id/btndivide"
+            style="@style/button_style"
+            android:text="@string/div" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <Button
+            android:id="@+id/btn6"
+            style="@style/button_style"
+            android:contentDescription="@null"
+            android:text="@string/six" />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+        </Space>
+
+        <Button
+            android:id="@+id/btn5"
+            style="@style/button_style"
+            android:contentDescription="@null"
+            android:text="@string/five" />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+        </Space>
+
+        <Button
+            android:id="@+id/btn4"
+            style="@style/button_style"
+            android:contentDescription="@null"
+            android:text="@string/four" />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+        </Space>
+
+        <Button
+            android:id="@+id/btnmul"
+            style="@style/button_style"
+            android:contentDescription="@null"
+            android:text="@string/mul" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <Button
+            android:id="@+id/btn3"
+            style="@style/button_style"
+            android:contentDescription="@null"
+            android:text="@string/three" />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+        </Space>
+
+        <Button
+            android:id="@+id/btn2"
+            style="@style/button_style"
+            android:contentDescription="@null"
+            android:text="@string/two" />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+        </Space>
+
+        <Button
+            android:id="@+id/btn1"
+            style="@style/button_style"
+            android:contentDescription="@null"
+            android:text="@string/one" />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+        </Space>
+
+        <Button
+            android:id="@+id/btnadd"
+            style="@style/button_style"
+            android:text="@string/add" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+        <Button
+            android:id="@+id/btnclear"
+            style="@style/button_style"
+            android:text="@string/clear" />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" >
+        </Space>
+
+        <Button
+            android:id="@+id/btn0"
+            style="@style/button_style"
+            android:text="@string/zero" />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+        </Space>
+
+        <Button
+            android:id="@+id/btnequal"
+            style="@style/button_style"
+            android:text="@string/equal" />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+        </Space>
+
+        <Button
+            android:id="@+id/btnsub"
+            style="@style/button_style"
+            android:text="@string/sub" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
